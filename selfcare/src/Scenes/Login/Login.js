@@ -113,10 +113,6 @@ class Login extends React.Component {
     };
   }
 
-  back = () => {
-    this.props.navigation.pop();
-  };
-
   changeEmailValue = (value) => {
     this.setState({ email: value });
   };
@@ -152,12 +148,6 @@ class Login extends React.Component {
             style={styles.image}
             source={require("../../Assets/background.png")}
           />
-          <TouchableOpacity style={styles.iconTouchable} onPress={this.back}>
-            <Image
-              style={styles.iconBack}
-              source={require("../../Assets/icon_back_blue.png")}
-            />
-          </TouchableOpacity>
         </View>
         <View style={styles.container}>
           <PrimaryLabel
